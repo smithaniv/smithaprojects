@@ -1,0 +1,12 @@
+<tmpl_unless name=full_name>
+full_name has false value
+<tmpl_else>
+full_name has true value
+</tmpl_unless>
+
+<tmpl_unless name=other_name>
+other_name has false value
+<tmpl_else>
+other_name has true value
+</tmpl_unless>
+

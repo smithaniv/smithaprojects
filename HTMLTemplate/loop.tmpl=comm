@@ -1,0 +1,19 @@
+<tmpl_var name=full_name escape=html>
+<tmpl_loop lists>
+  <tmpl_loop items>
+    Head: <tmpl_var hd>
+    Link:
+    <tmpl_if link>
+      <a href="<!-- tmpl_var item -->/"><!-- tmpl_var item_name --></a>
+      <tmpl_if new><img src="images/new.png" alt="[new]" width="20" height="12"></tmpl_if>
+    </tmpl_if>
+    File:
+    <tmpl_if file>
+      <tmpl_if file_url>
+        <a href="<tmpl_var file_url>"><tmpl_var file_head></a>
+      <tmpl_else>
+        <tmpl_var file_head>
+      </tmpl_if>
+    </tmpl_if>
+  </tmpl_loop>
+</tmpl_loop>

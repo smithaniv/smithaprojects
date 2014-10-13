@@ -1,0 +1,2 @@
+<tmpl_var name=full_name>
+<tmpl_var name=full_name escape=html>

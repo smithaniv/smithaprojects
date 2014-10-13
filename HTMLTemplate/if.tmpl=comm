@@ -1,0 +1,12 @@
+<!-- tmpl_if name=Full_Name -->
+full_name has true value = <!--  tmpl_var full_NAME -->
+<!-- tmpl_else -->
+full_name has false value = <!-- tmpl_var name = FuLl_NaMe -->
+<!--/tmpl_if -->
+
+<tmpl_if name = other_name>
+other_name has true value = <tmpl_var Other_Name>
+<tmpl_else>
+other_name has false value = <tmpl_var oThEr_NaMe>
+</tmpl_if>
+

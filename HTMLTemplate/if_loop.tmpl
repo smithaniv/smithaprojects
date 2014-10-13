@@ -1,0 +1,7 @@
+<tmpl_if myloop>
+	<tmpl_loop myloop>
+		<tmpl_if __FIRST__>first</tmpl_if><tmpl_if __INNER__>inner</tmpl_if><tmpl_if __LAST__>last</tmpl_if>
+		<tmpl_if __ODD__>odd<tmpl_else>even</tmpl_if>
+		Name: <tmpl_var name>
+	</tmpl_loop>
+</tmpl_if>
